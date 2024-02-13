@@ -2,7 +2,7 @@
 """ A module for handling squares. """
 
 
-class square():
+class Square:
     """Represents a rectangle with equal sides."""
     width = 0
     height = 0
@@ -13,11 +13,11 @@ class square():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """ Computes the area of this square. """
         return self.width * self.height
 
-    def perimeter_of_my_square(self):
-        """Perimeter of the square"""
+    def permiter_of_my_square(self):
+        """ Computes the perimeter of this square. """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
@@ -26,7 +26,7 @@ class square():
 
 
 if __name__ == "__main__":
-    s = square(width=12, height=9)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeter_of_my_square())
+    print(s.permiter_of_my_square())
